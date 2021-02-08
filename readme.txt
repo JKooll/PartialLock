@@ -1,3 +1,3 @@
 === Partial Lock ===
-Tags: 文章加密
+Tags: article encryption
 Requires at least: 1.0.0
