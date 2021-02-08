@@ -1,21 +1,23 @@
-# Partial Lock WordPreess 文章加密插件
-Partial Lock WordPress 文章加密插件，可以对文章部分内容进行加密。
+# Partial Lock
+Partial Lock is a WordPress article encryption plugin, which can encrypt part of the article content.
 
-## 使用场景
-1. 付费资源
-2. 付费阅读
-3. 私密资源
+## Scenarios
+1. After entering the password, the download link of the paid resource is displayed.
+2. After entering the password, the private reading content is displayed.
 
-获取更多使用方法【[链接](https://zhaoshuquan.com/tag/partiallock/)】
+## Installation
+Go to the **WordPress Admin Console**, open the plugin management panel, click **Install plugin** -> **Upload plugin**, enable the plugin after uploading successfully
 
-## 使用方法
-进入wordpress后台，打开插件面板，点击安装插件 -> 上传插件，上传成功之后启用插件
-在文章中按照如下格式插入短代码：
+## Usage
+Insert the shortcode in the article in the following format:
 ```
-[secret key="123" tip="输入密码解锁加密内容"]把要写的内容放入这两个标签中间[/secret]
-
-key: 密码 tip: 提示信息
+[secret key="put your password in here" tip="Enter password to unlock encrypted content"]Put the content to be encrypted between the two tags[/secret]
+```
+Parameters:
+```
+key: the password to unlock private content
+tip: custom prompt message
 ```
 
-## 开发者
-- JKol ([博客](https://zhaoshuquan.com)，[Github](https://github.com/JKooll))
+## Developers
+- JKol ([Github](https://github.com/JKooll))
