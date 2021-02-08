@@ -1,22 +1,22 @@
 .e-secret {
- margin: 20px 0;
- padding: 20px;
- background: #f8f8f8;
+	margin: 20px 0;
+	padding: 20px;
+	background: #f8f8f8;
 }
 .e-secret input.euc-y-i[type="password"] {
- float: left;
- background: #fff;
- width: 100%;
- line-height: 36px;
- margin-top: 5px;
- border-radius: 3px;
+	float: left;
+	background: #fff;
+	width: 100%;
+	line-height: 36px;
+	margin-top: 5px;
+	border-radius: 3px;
 }
 .e-secret input.euc-y-s[type="submit"] {
- float: right;
- margin-top: -47px;
- width: 30%;
- margin-right: 1px;
- border-radius: 0 3px 3px 0;
+	float: right;
+	margin-top: -47px;
+	width: 30%;
+	margin-right: 1px;
+	border-radius: 0 3px 3px 0;
 }
 input.euc-y-s[type="submit"]{
 	background-color:#3498db;
