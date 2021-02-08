@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: partiallocl
-Plugin URI: https://zhaoshuquan.com
-Description: 对文章内容加密码锁
+Plugin URI: https://github.com/JKooll
+Description: Encrypt part of the content of the article.
 Version: 1.0
 Author: JKol
-Author URI: https://zhaoshuquan.com
+Author URI: https://github.com/JKooll
 */
 function e_secret($atts, $content=null) {
 	extract(shortcode_atts(array('key' => null, 'tip' => null), $atts));
@@ -17,9 +17,9 @@ function e_secret($atts, $content=null) {
 		return '<div class="e-secret">' . $content . '</div>';
 	} else {
 		if (isset($_POST['e_secret_key'])) {
-			$tip = '<p class="secret_tip">密码输入错误！</p>' . $tip;
+			$tip = '<p class="secret_tip">Please enter the correct password!</p>' . $tip;
 		}
-		return '<form class="e-secret" action="'.get_permalink().'" method="post" name="e-secret"><label>输入密码查看加密内容：</label><input type="password" name="e_secret_key" class="euc-y-i" maxlength="50"><input type="submit" class="euc-y-s" value="确定">
+		return '<form class="e-secret" action="'.get_permalink().'" method="post" name="e-secret"><label>Enter the password to view the encrypted content:</label><input type="password" name="e_secret_key" class="euc-y-i" maxlength="50"><input type="submit" class="euc-y-s" value="确定">
       <div class="euc-clear"></div></form>' . '<p class="secret_tip">' . $tip . '</p>';
 	}
 }
